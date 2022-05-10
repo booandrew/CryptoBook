@@ -27,7 +27,7 @@ const CheckContact = () => {
         contactDiscord: discord,
       });
     } catch (error) {
-      message.error(error.message);
+      message.error(error.error.message);
     } finally {
       setIsLoading(false);
     }
